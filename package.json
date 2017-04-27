@@ -4,7 +4,9 @@
   "description": "Learning about IPFS JS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon index.js || ifps daemon",
+    "start-app": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,10 @@
   },
   "homepage": "https://github.com/and-sophie/ipfs-js-test#readme",
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1",
     "ipfs-js": "0.0.11"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.11.0"
   }
 }
