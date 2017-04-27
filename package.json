@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon index.js || ifps daemon",
-    "start-app": "node index.js"
+    "start-app": "node index.js",
+    "start-add-images": "nodemon addImages.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/and-sophie/ipfs-js-test#readme",
   "dependencies": {
+    "ipfs-api": "^14.0.0",
     "ipfs-js": "0.0.11"
   },
   "devDependencies": {

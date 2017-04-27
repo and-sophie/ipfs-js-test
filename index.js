@@ -34,14 +34,3 @@ ipfs.addJson(testJson, function(err, hash) {
     console.log('JSON returned from IPFS: ' + JSON.stringify(buffer))
   })
 })
-
-
-console.log("Setting up test image from URL...");
-
-let testImg = "http://weknowmemes.com/wp-content/uploads/2013/04/an-adventure-alpaca-my-bags.jpg";
-
-ipfs.api.util.addFromURL(testImg, function(err, hash) {
-  console.log("Adding image from URL...")
-  if (err) throw err;
-  console.log("Image added with hash: " + hash);
-})
